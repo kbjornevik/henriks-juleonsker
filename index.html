@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henrik's juleønsker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        h1::before {
+            content: "🎄 ";
+        }
+
+        h1::after {
+            content: " 🎁";
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        tbody tr {
+            transition: background-color 0.3s ease;
+        }
+
+        tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        tbody tr:nth-child(even):hover {
+            background-color: #f0f0f0;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            th, td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Henrik's juleønsker</h1>
+        <p class="subtitle">En samling av bøker, filmer og annet jeg gjerne vil ha</p>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tittel</th>
+                        <th>Nettbutikk / lenke</th>
+                        <th>Hva handler boken/filmen om?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tordenskjold Kjølevannbok</td>
+                        <td><a href="https://skald.no/boker" target="_blank">Skald</a></td>
+                        <td>Biografi om sjøhelten Tordenskjold som følger livet hans fra ungdom til død, med fokus på historiske fakta og dramatisering.</td>
+                    </tr>
+                    <tr>
+                        <td>Art of War (Sun Tzu)</td>
+                        <td>Bookis, Outland</td>
+                        <td>Klassisk kinesisk tekst om krigsstrategi, taktikk og ledelse, med vekt på å vinne ved å kjenne når og hvordan man skal slåss.</td>
+                    </tr>
+                    <tr>
+                        <td>How to Say No (Diogenes)</td>
+                        <td>ARK</td>
+                        <td>Samling av skrifter fra kynikeren Diogenes som forkaster samfunnets konvensjoner og promoterer enkel livsstil og ærlighet.</td>
+                    </tr>
+                    <tr>
+                        <td>The Prince (Machiavelli)</td>
+                        <td>ARK, Adlibris</td>
+                        <td>Politisk traktat om hvordan en hersker kan skaffe og beholde makt, med fokus på realisme og pragmatisme i statsledelse.</td>
+                    </tr>
+                    <tr>
+                        <td>A Silent Voice (Blu-ray)</td>
+                        <td>All The Anime, eBay</td>
+                        <td>Film om mobbing, skyld og forsoning, hvor en tidligere mobber prøver å få kontakt med en døv jente han mobbet i ungdommen.</td>
+                    </tr>
+                    <tr>
+                        <td>The Last Days of Socrates (Plato)</td>
+                        <td>ARK, Adlibris</td>
+                        <td>Platons skildring av Sokrates' siste dager fram mot henrettelse, hans forsvarstale og filosofiske sinne for døden.</td>
+                    </tr>
+                    <tr>
+                        <td>The Dangerous Life and Ideas of Diogenes</td>
+                        <td>ARK</td>
+                        <td>Biografi og analyse av Diogenes den kyniske filosofens liv og radikale ideer.</td>
+                    </tr>
+                    <tr>
+                        <td>Aleksander Solsjenitsyn bøker</td>
+                        <td>Bokbua, Bokkilden</td>
+                        <td>Romaner og essays av nobelprisvinneren Solsjenitsyn, ofte om sovjetisk undertrykkelse og menneskelig motstand.</td>
+                    </tr>
+                    <tr>
+                        <td>By Way of Deception (Victor Ostrovsky)</td>
+                        <td>AbeBooks, ThriftBooks</td>
+                        <td>En tidligere MOSSAD-agent avslører hemmeligheter om etterretning og spionasje.</td>
+                    </tr>
+                    <tr>
+                        <td>Girls' Last Tour (Blu-ray)</td>
+                        <td>Søk Outland, All The Anime</td>
+                        <td>Anime-serie om to jenter som reiser gjennom en post-apokalyptisk verden i et melankolsk og filosofisk eventyr.CDON: Denne nettbutikken selger også Blu-ray-versjoner av filmen. Sjekk produktbeskrivelsen for informasjon om språk og sone.</td>
+                    </tr>
+                    <tr>
+                        <td>Chaos (Tom O'Neill og Dan Piepen)</td>
+                        <td>ISBN 9780316477377, søk ARK/Adlibris</td>
+                        <td>Undersøkende bok om konspirasjonsteorier og hemmeligheter i storpolitikk og virksomheter.</td>
+                    </tr>
+                    <tr>
+                        <td>The Nicomachean Ethics (Aristoteles)</td>
+                        <td>Søk ARK, Norli</td>
+                        <td>Filosofisk verk om etikk og menneskets moralske dyder, studium av det gode liv og lykke.</td>
+                    </tr>
+                    <tr>
+                        <td>Metamorphosis (Kafka)</td>
+                        <td>Søk ARK, Norli</td>
+                        <td>Kortroman om en mann som våkner opp forvandlet til et insekt, en utforskning av fremmedgjøring og eksistensielle temaer.</td>
+                    </tr>
+                    <tr>
+                        <td>A History of Central Banking</td>
+                        <td>Søk Adlibris, Bokkilden</td>
+                        <td>Historisk gjennomgang av utviklingen av sentralbanker og deres rolle i økonomien.</td>
+                    </tr>
+                    <tr>
+                        <td>Hollywood Babylon (Kenneth Anger)</td>
+                        <td>Søk Adlibris, Bokkilden</td>
+                        <td>Kjendis- og skandalehistorier fra Hollywoods gullalder, med fokus på drama og hemmeligheter bak kulissene.</td>
+                    </tr>
+                    <tr>
+                        <td>Ecce Homo (Nietzsche)</td>
+                        <td>Søk ARK, Norli</td>
+                        <td>Selvbetraktning og filosofiske refleksjoner fra Nietzsche om sitt liv og verker.</td>
+                    </tr>
+                    <tr>
+                        <td>Slik talte Zarathustra (Nietzsche)</td>
+                        <td>Søk ARK, Norli</td>
+                        <td>Filosofisk dikt inspirert av Zarathustras lære, som presenterer Nietzsches tanker om overmennesket og moral.</td>
+                    </tr>
+                    <tr>
+                        <td>Luftkvalitet måler (Birdie)</td>
+                        <td><a href="https://www.birdie.design/products/birdie-2-0-glacier" target="_blank">Birdie Design</a></td>
+                        <td>Luftkvalitetsmåler for hjemmet som gir sanntidsdata om forurensing, støv, og temperatur.</td>
+                    </tr>
+                    <tr>
+                        <td>Love, Chunibyo & Other Delusions (Blu-ray)</td>
+                        <td>Søk All The Anime, Outland</td>
+                        <td>Anime om en ung gutt som tiltrekkes av en jente med fantasifulle og dramatiske lidenskaper som bringer komedie og romantikk.</td>
+                    </tr>
+                    <tr>
+                        <td>Argon Audio Fenris pc-høyttaler</td>
+                        <td><a href="https://www.hifiklubben.no/argon-audio-fenris-a4-kompakt-hoeyttaler---aktive/argfenrisa4wa" target="_blank">Hi-Fi Klubben</a></td>
+                        <td>Kompakt aktiv PC-høyttaler med god lydkvalitet.</td>
+                    </tr>
+                    <tr>
+                        <td>Aristotle's Art of Rhetoric</td>
+                        <td><a href="https://www.norli.no/boker/fagboker/sprak-litteratur-og-lingvistikk/sprakvitenskap/aristotle-s-art-of-rhetoric" target="_blank">Norli</a></td>
+                        <td>Klassisk verk om kunsten å tale overbevisende, analysert gjennom logikk, patos og etos.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="footer">
+            <p>🎅 God jul! 🎄</p>
+        </div>
+    </div>
+</body>
+</html>
